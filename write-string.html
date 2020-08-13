@@ -1,0 +1,27 @@
+<script type="text/javascript">
+    RED.nodes.registerType('write-string',{
+        category: 'function',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value:""}
+        },
+        inputs:1,
+        outputs:0,
+        icon: "inject.png",
+        label: function() {
+            return this.name||"write-string";
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="write-string">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="write-string">
+    <p>A simple that writes a string to an OLED display</p>
+</script>
+
